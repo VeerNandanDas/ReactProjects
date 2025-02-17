@@ -15,11 +15,11 @@ export  const todoContext = createContext({
     
     addTodo : (todo)=>{},
     
-    deletTodo : (id) => {},
+    deleteTodo : (id) => {},
     
     updateTodo : (id,todo) =>{},
     
-    toggleTodo: (id) => {}
+    toggleComplete: (id) => {}
 });
 
 export const useTodo = () => {
