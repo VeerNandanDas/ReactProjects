@@ -26,13 +26,8 @@ function App() {
       .finally(()=> setLoading(false)); 
     },[])
 
-
-
-  return (
-    <>
-      <h1>Hi there ! </h1>
-    </>
-  );
+  return !loading (
+  <div className=""> </div>) : null
 }
 
 export default App;
