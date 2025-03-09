@@ -5,7 +5,9 @@ import { useEffect, useState } from 'react'
 import AuthService from "./appwrite/auth";
 import authService from "./appwrite/auth";
 import { login , logOut } from "./store/authSlice";
-
+import Header from "./components/header/header";
+import Footer from "./components/footer/footer";
+import { Outlet } from "react-router-dom";
 
 
 function App() {
@@ -28,7 +30,13 @@ function App() {
 
     return !loading ? (
       <div className="min-h-screen flex flex-wrap content-between bg-gray-400 "> 
-            test
+            <div className="w-full block">
+            <Header />
+            <main>
+             TODO :  {/* <Outlet/>  */}
+            </main> 
+            <Footer/>
+            </div>
       </div>
     ) : null
     
